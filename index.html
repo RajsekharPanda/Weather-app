@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
 </head>
@@ -22,7 +26,7 @@
         <div class="weather-container">
 
             <!-- grant location container-->
-            <div class="grant-location-container">
+            <div class="sub-container grant-location-container">
                 <img src="./assets/location.png" width="80" height="80" loading="lazy">
                 <p>grant Location Access</p>
                 <p>Allow Access to get weather Information</p>
@@ -38,13 +42,13 @@
             </form>
 
             <!--- loading screen container -->
-            <div class="loading-container">
+            <div class="sub-container loading-container">
                 <img src="./assets/loading.gif" width="150" height="150">
                 <p>Loading</p>
             </div>
 
             <!-- show weather info -->
-            <div class="user-info-container">
+            <div class="sub-container user-info-container">
 
                 <!--city name and Flag-->
                 <div class="name">
@@ -77,7 +81,7 @@
                     </div>
 
                     <!--card 3-->
-                    <div class="parameter">
+                    <div class="parameter clouds">
                         <img src="./assets/cloud.png" >
                         <p>Clouds</p>
                         <p data-cloudiness></p>
